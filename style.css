@@ -1,0 +1,56 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+ .container{
+    border: 2px solid;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+ }
+.btn{
+    text-align: center;
+    margin: 20px;
+}
+img{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+}
+button{
+    font-size: 1.5em;
+    padding: 20px;
+    width: 60px;
+    margin: 6px;
+            
+}
+button:hover{
+    background-color: aqua;
+    border-radius: 100px;
+} 
+.btn>.b1:hover~img{
+    transition: transform 10s ;
+    transform: rotate(3600deg);
+}
+.btn>.b2:hover~img{
+    transition: transform 10s;
+    transform: rotate(5400deg);
+}
+.btn>.b3:hover~img{
+    transition: all 10s;
+    transform: rotate(7200deg);
+}
+.btn>.b4:hover~img{
+    transition: transform 10s;
+    transform: rotate(14000deg);
+}
+
